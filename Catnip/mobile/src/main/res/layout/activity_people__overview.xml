@@ -1,0 +1,420 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    android:id="@+id/Covering">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.henry.represent.People_Overview"
+        android:id="@+id/Layout_overview">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Senator1"
+            android:layout_alignParentEnd="false"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="false"
+            android:nestedScrollingEnabled="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/testV"
+            android:text="Name:"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="46dp"
+            android:layout_alignParentStart="false"
+            android:layout_toRightOf="@id/Senator1"
+            />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/testV"
+            android:layout_toRightOf="@id/Senator1"
+            android:id="@+id/scrollView"
+            android:layout_alignParentStart="false"
+            android:fillViewport="false"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:id="@+id/name1"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/testV" />
+
+        </ScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Party:"
+            android:id="@+id/PartyLabel"
+            android:layout_toRightOf="@id/Senator1"
+            android:layout_below="@+id/scrollView"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/PartyLabel"
+            android:layout_toRightOf="@id/Senator1"
+            android:text="Medium Text"
+            android:id="@+id/theParty"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_below="@+id/Senator1"
+            android:text="Email:"
+            android:id="@+id/email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="this is the email"
+            android:id="@+id/email1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Website:"
+            android:id="@+id/website1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More!"
+            android:id="@+id/Details1"
+            android:layout_below="@+id/scrollView"
+            android:layout_alignEnd="@+id/scrollView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/website1"
+            android:text="this is the website"
+            android:id="@+id/thewebsite1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thewebsite1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Latest Tweet:"
+            android:id="@+id/twitter1" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/twitter1"
+            android:id="@+id/twitterScroll1"
+            android:layout_alignParentStart="false"
+            android:fillViewport="false"
+            android:layout_alignParentEnd="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tweet"
+                android:id="@+id/theTweet1"
+                android:layout_alignParentTop="true"
+                />
+
+        </ScrollView>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/twitterScroll1"
+            android:id="@+id/Senator2"
+            android:layout_alignParentEnd="false"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="false"
+            android:nestedScrollingEnabled="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/Name2"
+            android:text="Name:"
+            android:layout_below="@id/twitterScroll1"
+            android:layout_marginEnd="46dp"
+            android:layout_alignParentStart="false"
+            android:layout_toRightOf="@id/Senator2"
+            />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Name2"
+            android:layout_toRightOf="@id/Senator2"
+            android:id="@+id/NameView2"
+            android:layout_alignParentStart="false"
+            android:fillViewport="false"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:id="@+id/name2"
+                android:layout_alignParentTop="false"
+                android:layout_toEndOf="@+id/Name2" />
+
+        </ScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More!"
+            android:id="@+id/Details2"
+            android:layout_below="@+id/NameView2"
+            android:layout_alignEnd="@+id/NameView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Party:"
+            android:id="@+id/PartyLabel2"
+            android:layout_toRightOf="@id/Senator2"
+            android:layout_below="@+id/NameView2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/PartyLabel2"
+            android:layout_toRightOf="@id/Senator2"
+            android:text="Medium Text"
+            android:id="@+id/theParty2"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_below="@+id/Senator2"
+            android:text="Email:"
+            android:id="@+id/email2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="this is the email"
+            android:id="@+id/theEmail2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/theEmail2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Website:"
+            android:id="@+id/website2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/website2"
+            android:text="this is the website"
+            android:id="@+id/thewebsite2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thewebsite2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Latest Tweet:"
+            android:id="@+id/twitter2" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/twitter2"
+            android:id="@+id/twitterScroll2"
+            android:layout_alignParentStart="false"
+            android:fillViewport="false"
+            android:layout_alignParentEnd="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tweet"
+                android:id="@+id/theTweet2"
+                android:layout_alignParentTop="true"
+                />
+
+        </ScrollView>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/twitterScroll2"
+            android:id="@+id/Senator3"
+            android:layout_alignParentEnd="false"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="false"
+            android:nestedScrollingEnabled="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/Name3"
+            android:text="Name:"
+            android:layout_below="@id/twitterScroll2"
+            android:layout_marginEnd="46dp"
+            android:layout_alignParentStart="false"
+            android:layout_toRightOf="@id/Senator3"
+            />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Name3"
+            android:layout_toRightOf="@id/Senator3"
+            android:id="@+id/NameView3"
+            android:layout_alignParentStart="false"
+            android:fillViewport="false"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:id="@+id/name3"
+                android:layout_alignParentTop="false"
+                android:layout_toEndOf="@+id/Name3" />
+
+        </ScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More!"
+            android:id="@+id/Details3"
+            android:layout_below="@+id/NameView3"
+            android:layout_alignEnd="@+id/NameView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Party:"
+            android:id="@+id/PartyLabel3"
+            android:layout_toRightOf="@id/Senator3"
+            android:layout_below="@+id/NameView3"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/PartyLabel3"
+            android:layout_toRightOf="@id/Senator3"
+            android:text="Medium Text"
+            android:id="@+id/theParty3"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_below="@+id/Senator3"
+            android:text="Email:"
+            android:id="@+id/email3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="this is the email"
+            android:id="@+id/theEmail3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/theEmail3"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Website:"
+            android:id="@+id/website3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/website3"
+            android:text="this is the website"
+            android:id="@+id/thewebsite3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thewebsite3"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Latest Tweet:"
+            android:id="@+id/twitter3" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/twitter3"
+            android:id="@+id/twitterScroll3"
+            android:layout_alignParentStart="false"
+            android:fillViewport="false"
+            android:layout_alignParentEnd="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tweet"
+                android:id="@+id/theTweet3"
+                android:layout_alignParentTop="true"
+                />
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+</ScrollView>
