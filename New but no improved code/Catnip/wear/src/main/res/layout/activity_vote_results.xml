@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.cs160.joleary.catnip.VoteResults">
+
+    <TextView android:text="2012 Vote Results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/TopLine" />
+
+    <TextView android:text="Vermont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TopLine"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/MidLine"/>
+
+    <TextView android:text="Addison County"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MidLine"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/BotLine"/>
+
+    <TextView android:text="Obama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BotLine"
+        android:layout_alignStart="@+id/BotLine"
+        android:id="@+id/Obama"/>
+
+    <TextView android:text="Romney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BotLine"
+        android:layout_alignEnd="@+id/BotLine"
+        android:id="@+id/Romney"/>
+
+
+    <TextView android:text="68%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Obama"
+        android:layout_alignStart="@+id/BotLine"
+        android:id="@+id/ObamaVal"/>
+
+    <TextView android:text="29%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Obama"
+        android:layout_alignEnd="@+id/BotLine"
+        android:id="@+id/RomneyVal"/>
+
+</RelativeLayout>
