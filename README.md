@@ -16,5 +16,5 @@ See [your demo video title here] (https://link_to_your_video)
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Any other support
+Took a lot of code about shaking from : http://jasonmcreynolds.com/?p=388
+Special thanks to COlby for helping me with a lot of my project even though I didn't finish a lot of it!
